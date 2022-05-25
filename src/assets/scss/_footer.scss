@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 2rem;
+  background-color: $dark-color;
+  color: $white-color;
+
+  &__author {
+    color: rgba($white-color, .7);
+  }
+
+  &__link {
+    color: rgba($white-color, .7);
+    text-decoration: none;
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+}

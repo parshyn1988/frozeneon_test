@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <search-field />
+          <result-list />
+          <result-pagination />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__author">Yuriy Parshyn</p>
+      <a class="footer__link" href="https://github.com/parshyn1988" target="_blank">GitHub</a>
+    </footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import SearchField from '@/components/SearchField';
+import ResultList from '@/components/ResultList';
+import ResultPagination from '@/components/ResultPagination';
 
 export default {
-  name: 'HomeView',
+  name: 'home-view',
+
   components: {
-    HelloWorld
+    SearchField,
+    ResultList,
+    ResultPagination,
   }
 }
 </script>
